@@ -45,7 +45,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(singleMember.nome);
     console.log(singleMember.ruolo);
     console.log(singleMember.foto);
-
+    //Stampo in HTML i nomi, ruoli e foto
     nameElement.innerHTML+= `<div class="single-name">${singleMember.nome}</div>`
     roleElement.innerHTML+= `<div class="single-name">${singleMember.ruolo}</div>`
     picElement.innerHTML+= `<div class="single-name">${singleMember.foto}</div>`
