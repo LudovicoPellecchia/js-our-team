@@ -1,6 +1,10 @@
 "use strict"
-//Creo un array di objects che contiene le informazioni dei membri del team
 
+const nameElement=document.querySelector(".name-container")
+const roleElement=document.querySelector(".role-container")
+const picElement=document.querySelector(".photo-container")
+
+//Creo un array di objects che contiene le informazioni dei membri del team
 const teamMembers = [
     {
         nome: "Wayne Barnett",
@@ -34,6 +38,7 @@ const teamMembers = [
     }
 ]
 
+//Ciclo for che stampa in console le chiavi degli oggetti dentro l'array
 for (let i = 0; i < teamMembers.length; i++) {
     const singleMember = teamMembers[i]
 
@@ -41,5 +46,9 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(singleMember.ruolo);
     console.log(singleMember.foto);
 
+    nameElement.innerHTML+= `<div class="single-name">${singleMember.nome}</div>`
+    roleElement.innerHTML+= `<div class="single-name">${singleMember.ruolo}</div>`
+    picElement.innerHTML+= `<div class="single-name">${singleMember.foto}</div>`
 }
+
 
